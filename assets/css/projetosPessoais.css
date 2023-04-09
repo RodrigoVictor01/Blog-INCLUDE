@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #063455;
+}
+
+/* START HEADER */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+}
+
+header .container {
+    width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 500;
+    color: #ffbc81;
+}
+
+.nav-logo .img-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ffbc81;
+    color: #063455;
+    margin-right: 8px;
+}
+
+
+.menu-nav nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu-nav nav ul li a {
+    margin: 0 10px;
+    color: #ffbc81;
+    font-weight: 500;
+    height: 80px;
+    display: flex;
+    border-bottom: 2px solid transparent;
+    transition: all ease-in-out 0.35s;
+}
+
+
+
+
+header .container a:hover {
+    cursor: pointer;
+}
+
+.menu-nav nav ul li a:hover,
+.menu-nav .active a {
+    color: #10aedb;
+    cursor: pointer;
+    border-bottom: 2px solid #ffbc81;
+}
+
+/* END HEADER */
+
+
+main {
+    /* height: calc(100vh - 260px); */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+main .container {
+    width: 1250px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main .projects-title {
+    text-align: center;
+}
+
+.container-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+main .container .projects-title h1 {
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #ffbc81;
+    text-shadow: 2px 2px 1px rgba(255, 188, 129, 0.2);
+}
+
+.container-projects .title-project h3 {
+    text-align: center;
+    color: #10aedb;
+    text-shadow: 2px 2px 1px rgba(255, 188, 129, 0.2);
+    margin-bottom: 10px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.projects .img-project {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: red;
+}
+
+.projects .img-project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.projects .link-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.projects .link-project a {
+    color: #10aedb;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.projects .link-project a:hover {
+    text-decoration: underline;
+}
+
+
+/* START FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 180px;
+    background-color: #052237;
+}
+
+footer .container {
+    width: 1250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer .nav-logo .img-nav {
+    width: 70px;
+    height: 70px;
+}
+
+footer .nav-logo h1 {
+    color: #ffbc81;
+}
+
+footer .links-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+footer .links-footer a i {
+    font-size: 50px;
+    color: #ffbc81;
+    transition: all ease-in-out 0.35s;
+}
+
+footer .links-footer a i:hover {
+    color: #10aedb;
+}
+
+footer .copy h3 {
+    text-align: center;
+    color: #ffd4ded7;
+    font-weight: 400;
+}
+
+/* END FOOTER */
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 1220px) {
+
+
+    header .container {
+        justify-content: space-around;
+    }
+
+    footer .footer-container {
+        justify-content: space-around;
+    }
+
+
+}
+
+@media (max-width: 770px) {
+
+    .container-projects {
+        padding: 0 20px
+    }
+
+
+    footer {
+        margin-top: 500px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .nav-logo {
+        display: none;
+    }
+
+    .projects {
+        margin-right: 0;
+    }
+
+
+    main .container .projects-title h1 {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 475px) {
+    footer {
+        margin-top: 700px;
+    }
+
+    footer .copy h3 {
+        font-size: 15px;
+        padding: 0 15px;
+    }
+}
